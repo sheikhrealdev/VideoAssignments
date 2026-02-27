@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color:  #ff676d;
+}
+.box{
+    max-width: 400px;
+    width: 100%;
+}
+.box .search-box{
+    position: relative;
+    height: 50px;
+    max-width: 50px;
+    margin: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+#check:checked ~ .search-box{
+   max-width: 380px;
+}
+.search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    padding-left: 18px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.search-box .icon{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    right: -2px;
+    top: 0px;
+    text-align: center;
+    line-height: 50px;
+    color: #ff676d;
+    background-color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+#check:checked ~ .search-box .icon{
+    color: #fff;
+    background-color: #ff676d;
+   border-radius: 0px 25px 25px 0px ;
+   width: 60px;
+}
+#check{
+    display: none;
+}
